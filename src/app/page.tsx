@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="relative " style={{ height: "100vh" }}>
       <Image src={myImage} alt="." className="z-10 absolute object-contain shadow-cyan-950 myImg" />
-      <div className="absolute p-5 mt-5 md:right-36 md:top-52">
+      <div className="absolute p-5 mt-5 sm:right-36 md:top-20 ">
 
         <div className="intro-tags flex flex-col justify-center items-center opacity-70 ">
           <h1 className="font-semibold text-3xl">Hey There! I am <span className="text-stone-300">Sam Malik</span>, </h1>
