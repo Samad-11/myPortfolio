@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description: "About Page of the Dev Sam Website"
 }
 const AboutPage = () => {
+    const date = new Date();
 
     return (
         <>
@@ -39,9 +40,13 @@ const AboutPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="buttons flex pb-4 flex-wrap text-red-950 font-semibold " >
-                            <Link href={''} className='flex-1  p-9 bg-blue-400  text-center' style={{ borderBottomLeftRadius: "20px" }}>Resume</Link>
-                            <Link href={''} className='flex-1 text-nowrap p-9 bg-green-400 text-center' style={{ borderBottomRightRadius: "20px" }}>Get In Touch</Link>
+                        <div className="buttons w-[100%] pb-4">
+                            <button className=' bg-blue-400 p-9  hover:bg-blue-800 transition-colors delay-100 duration-500 ease-linear text-center' style={{ borderBottomLeftRadius: "20px", width: "50%" }}>
+                                <Link href={''} className=''>Resume {date.getFullYear()} </Link>
+                            </button>
+                            <button className=' bg-green-400 p-9  text-center hover:bg-green-800 transition-colors delay-100 duration-500 ease-linear' style={{ borderBottomRightRadius: "20px", width: "50%" }}>
+                                <Link href={''} >Get In Touch</Link>
+                            </button>
                         </div>
                     </div>
                 </section>
