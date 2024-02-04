@@ -226,3 +226,7 @@
     transform-origin: 19vw 17vh;
     box-shadow: -40vmin 0 5.479541318686344vmin currentColor;
 }
+
+.overflow {
+    overflow-y: visible !important;
+}

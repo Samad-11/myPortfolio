@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    overflow-y: hidden;
-
-
-}
-
 .myImg {
     filter: drop-shadow(0px -4px 4px #BF83BF);
     /* height: 90vh; */

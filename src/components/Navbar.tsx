@@ -16,14 +16,18 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen)
     }
     return (
-        <nav className='flex justify-around items-center p-2 z-10 '>
+        <nav className='flex justify-around items-center p-2 z-40 bg-black' style={{ height: "5vh" }}>
             <div className="logo brandName navLeft flex-1">
-                <Image
-                    src={'/logo.png'}
-                    // src={'/logoWithBG.png'}
-                    alt='logo'
-                    width={100} height={200}
-                />
+                <Link href="/">
+
+                    <Image
+                        src={'/logo.png'}
+                        // src={'/logoWithBG.png'}
+                        alt='logo'
+                        width={100} height={200}
+                        className='absolute z-50'
+                    />
+                </Link>
             </div>
             <div className="links navRight ">
                 <div className='md:hidden '>
