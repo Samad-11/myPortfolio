@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { MdOutlineSchool } from 'react-icons/md'
 import { LiaProjectDiagramSolid } from 'react-icons/lia'
 import { Metadata } from 'next'
+import Buttons from './Buttons'
 export const metadata: Metadata = {
     title: "About",
     description: "About Page of the Dev Sam Website"
@@ -23,10 +24,12 @@ const AboutPage = () => {
                             <figure className='relative '>
                                 <Image src={myImage} alt='Image' className='bg-red-400 max-h-[100%]' style={{ borderTopLeftRadius: "20px" }} />
                                 <div className='text-stone-200 p-5 absolute z-50 bottom-0 right-0 flex text-2xl gap-2'>
-                                    <i><Link href={''} className='hover:text-yellow-300 '><FaFacebook /></Link></i>
-                                    <i><Link href={''} className='hover:text-yellow-300 '><FaGithub /></Link></i>
-                                    <i><Link href={''} className='hover:text-yellow-300 '><FaLinkedin /></Link></i>
-                                    <i><Link href={''} className='hover:text-yellow-300 '><FaInstagram /></Link></i>
+                                    <i><Link target='_blank' rel='external' title='' href={'Facebook'} className='hover:text-yellow-300 
+                                    pointer-events-none cursor-default
+                                    '><FaFacebook /></Link></i>
+                                    <i><Link target='_blank' rel='external' title='Github' href={'https://github.com/Samad-11'} className='hover:text-yellow-300 '><FaGithub /></Link></i>
+                                    <i><Link target='_blank' rel='external' title='Linked' href={'https://www.linkedin.com/in/abdus-samad-633b3425a/'} className='hover:text-yellow-300 '><FaLinkedin /></Link></i>
+                                    <i><Link target='_blank' rel='external' title='Instagram' href={'https://www.instagram.com/baddek__eih/'} className='hover:text-yellow-300 '><FaInstagram /></Link></i>
                                 </div>
                             </figure>
                             <div className="content bg-stone-600 p-3 md:p-10 rounded">
@@ -40,14 +43,7 @@ const AboutPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="buttons w-[100%] pb-4">
-                            <button className=' bg-blue-400 p-9  hover:bg-blue-800 transition-colors delay-100 duration-500 ease-linear text-center' style={{ borderBottomLeftRadius: "20px", width: "50%" }}>
-                                <Link href={''} className=''>Resume {date.getFullYear()} </Link>
-                            </button>
-                            <button className=' bg-green-400 p-9  text-center hover:bg-green-800 transition-colors delay-100 duration-500 ease-linear' style={{ borderBottomRightRadius: "20px", width: "50%" }}>
-                                <Link href={''} >Get In Touch</Link>
-                            </button>
-                        </div>
+                        <Buttons />
                     </div>
                 </section>
 

@@ -2,6 +2,8 @@ import Image from "next/image";
 import myImage from '../../public/myImg.png';
 import AutoType from "@/components/AutoType";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import ConnectButton from "@/components/ConnectButton";
 
 
 export default function Home() {
@@ -15,7 +17,7 @@ export default function Home() {
           <AutoType />
         </div>
       </div>
-      <Button className="btn vibrate-1 appointmentBtn z-20 sm:z-0 absolute hover:bg-stone-500 font-bold hover:bg-opacity-50 border border-stone-500" >Contact </Button>
+      <ConnectButton />
     </div>
   );
 }

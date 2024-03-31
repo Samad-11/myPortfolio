@@ -27,7 +27,7 @@ const Navbar = () => {
                     />
                 </Link>
             </div>
-            <div className="links navRight ">
+            <div className="links navRight pt-10 md:pr-5">
                 <div className='md:hidden '>
 
                     <Sheet onOpenChange={menuHandler} >
@@ -40,7 +40,7 @@ const Navbar = () => {
                             <SheetHeader>
                                 <SheetDescription >
 
-                                    <ul className='flex flex-col justify-around border border-r-amber-50 h-screen items-end border-none text-slate-100 '>
+                                    <ul className='flex flex-col justify-center items-center gap-5 border border-r-amber-50 h-screen items-end border-none text-slate-100 '>
                                         {links.map((link) => (
                                             <li key={link.path}>
                                                 <SheetClose asChild>
