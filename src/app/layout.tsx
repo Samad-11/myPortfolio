@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     url: process.env.NEXT_BASE_URL,
   },
   keywords: ['WEBSITE', 'APPLICATION', 'DEVELOPER', 'PROGRAMMER'],
-  verification: { google: 'bKHS0Re-QcRIZkH3UYplJ5AxSR9LwMDJB-9SleG8JAU' },
+  verification: { google: 'Iyo7YmbRShZ4t5lYChHzIB56jW32jLA4HtqWpWolTlU' },
 
 
 };
