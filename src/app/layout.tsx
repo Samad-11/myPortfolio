@@ -14,7 +14,9 @@ export const metadata: Metadata = {
   authors: { name: "Abdus Samad", url: process.env.NEXT_BASE_URL },
   category: "Portfolio",
   creator: "Abdus Samad",
+
   robots: { follow: true, index: true },
+  manifest: "/manifext.json",
   alternates: {
     canonical: `dev.${process.env.NExt_BASE_URL}`,
     languages: {
@@ -30,6 +32,15 @@ export const metadata: Metadata = {
     url: process.env.NEXT_BASE_URL,
   },
   keywords: ['WEBSITE', 'APPLICATION', 'DEVELOPER', 'PROGRAMMER'],
+
+  icons: [
+    {
+      rel: "icon", url: "/icons/android-chrome-192x192.png"
+    },
+    {
+      rel: "apple-touch-icon", url: "/icon/apple-touch-icon.png"
+    }
+  ],
   verification: { google: 'Iyo7YmbRShZ4t5lYChHzIB56jW32jLA4HtqWpWolTlU' },
 
 
