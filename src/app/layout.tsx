@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   creator: "Abdus Samad",
 
   robots: { follow: true, index: true },
-  manifest: "/manifext.json",
+  manifest: "/manifest.json",
   alternates: {
     canonical: `dev.${process.env.NExt_BASE_URL}`,
     languages: {

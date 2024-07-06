@@ -3,7 +3,7 @@
     "short_name": "Sam",
     "theme_color": "#35155D",
     "background_color": "#ffffff",
-    "display": "browser",
+    "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
     "start_url": "/",
